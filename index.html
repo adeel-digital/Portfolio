@@ -802,12 +802,22 @@
         });
 
         // 2. Parallax Dynamic Scroll Logic
+        const particlesContainer = document.getElementById('particles-js');
+        let parallaxTicking = false;
+
         window.addEventListener('scroll', () => {
-            let offset = window.pageYOffset;
-            const container = document.getElementById('particles-js');
-            // Background moves at 20% speed of foreground for depth
-            container.style.transform = 'translateY(' + offset * 0.2 + 'px)';
-        });
+            if (!parallaxTicking) {
+                window.requestAnimationFrame(() => {
+                    let offset = window.pageYOffset;
+                    // Background moves at 20% speed of foreground for depth
+                    if (particlesContainer) {
+                        particlesContainer.style.transform = 'translateY(' + offset * 0.2 + 'px)';
+                    }
+                    parallaxTicking = false;
+                });
+                parallaxTicking = true;
+            }
+        }, { passive: true });
 
         // 3. Zoom-In Reveal Engine (Straight Grid Aligned)
         const cards = document.querySelectorAll('.zoom-card');
