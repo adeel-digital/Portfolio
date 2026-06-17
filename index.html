@@ -48,14 +48,8 @@
            ========================================= 
         */
         * {
-            margin-top: 0;
-            margin-right: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            padding-top: 0;
-            padding-right: 0;
-            padding-bottom: 0;
-            padding-left: 0;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
             font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
             scroll-behavior: smooth;
@@ -114,10 +108,7 @@
             background: rgba(13, 17, 23, 0.75); 
             backdrop-filter: var(--glass-blur);
             -webkit-backdrop-filter: var(--glass-blur);
-            padding-top: 12px;
-            padding-bottom: 12px;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding: 12px 50px;
             display: flex; 
             justify-content: space-between; 
             align-items: center;
@@ -162,13 +153,9 @@
            ========================================= 
         */
         section { 
-            padding-top: 140px;
-            padding-bottom: 80px;
-            padding-left: 4%;
-            padding-right: 4%;
+            padding: 140px 4% 80px;
             max-width: 1150px; 
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
             position: relative; 
             z-index: 1; 
         }
@@ -265,10 +252,7 @@
             border-right: 1px solid var(--accent-teal);
             border-bottom: 6px solid var(--accent-shadow-deep); /* 3D Base */
             border-radius: 10px; 
-            padding-top: 18px;
-            padding-bottom: 18px;
-            padding-left: 45px;
-            padding-right: 45px;
+            padding: 18px 45px;
             text-decoration: none; 
             font-weight: 900; 
             text-transform: uppercase;
@@ -321,10 +305,7 @@
             border: 1px solid var(--border-subtle);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px; 
-            padding-top: 45px;
-            padding-right: 45px;
-            padding-bottom: 45px;
-            padding-left: 45px;
+            padding: 45px;
             transition: var(--transition-standard), opacity 0.6s ease;
             position: relative;
             opacity: 0; 
@@ -389,10 +370,7 @@
             background: linear-gradient(135deg, rgba(0, 206, 209, 0.1) 0%, rgba(22, 27, 34, 0.95) 100%);
             border-left: 8px solid var(--accent-teal); 
             grid-column: 1 / -1; 
-            padding-top: 60px;
-            padding-bottom: 60px;
-            padding-left: 60px;
-            padding-right: 60px;
+            padding: 60px;
             box-shadow: 0 15px 40px rgba(0, 206, 209, 0.1);
         }
 
@@ -410,10 +388,7 @@
             margin-bottom: 15px; 
             display: inline-block;
             background: rgba(0, 206, 209, 0.15);
-            padding-top: 6px;
-            padding-bottom: 6px;
-            padding-left: 18px;
-            padding-right: 18px;
+            padding: 6px 18px;
             border-radius: 50px;
         }
 
@@ -455,16 +430,14 @@
         .brand-desc { 
             color: var(--text-silver); 
             font-size: 1.05rem; 
-            margin-bottom: 35px; 
-            margin-top: 15px; 
+            margin: 15px 0 35px;
         }
 
         .btn-outline {
             display: block; 
             text-align: center; 
             width: 100%; 
-            padding-top: 16px;
-            padding-bottom: 16px;
+            padding: 16px 0;
             border: 1px solid var(--border-active); 
             color: var(--accent-teal);
             text-decoration: none; 
@@ -498,10 +471,7 @@
             background: rgba(0, 206, 209, 0.05); 
             border: 1px solid rgba(0, 206, 209, 0.3);
             color: var(--accent-teal); 
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 22px;
-            padding-right: 22px;
+            padding: 10px 22px;
             border-radius: 100px; 
             font-size: 0.9rem; 
             font-weight: 700;
@@ -520,10 +490,7 @@
             right: 40px;
             background-color: #25D366; 
             color: white; 
-            padding-top: 18px;
-            padding-bottom: 18px;
-            padding-left: 32px;
-            padding-right: 32px;
+            padding: 18px 32px;
             border-radius: 100px; 
             text-decoration: none; 
             display: flex; 
@@ -553,25 +520,25 @@
            ========================================= 
         */
         @media (max-width: 768px) {
-            nav { padding-left: 20px; padding-right: 20px; flex-direction: column; gap: 12px; }
+            nav { padding: 0 20px; flex-direction: column; gap: 12px; }
             .nav-links { gap: 15px; flex-wrap: wrap; justify-content: center;}
             .nav-links a { font-size: 0.75rem; }
 
-            #hero { padding-top: 190px; padding-bottom: 60px; }
+            #hero { padding: 190px 4% 60px; }
             h1 { font-size: 2.8rem; letter-spacing: -1px; }
             h2 { font-size: 1rem; letter-spacing: 2px; }
-            .hero-pitch { font-size: 1.1rem; padding-left: 15px; padding-right: 15px; line-height: 1.7; }
+            .hero-pitch { font-size: 1.1rem; padding: 0 15px; line-height: 1.7; }
             
-            .hero-buttons { flex-direction: column; width: 100%; max-width: 340px; margin-left: auto; margin-right: auto; }
-            .btn-3d { width: 100%; text-align: center; padding-top: 16px; padding-bottom: 16px; font-size: 1rem; }
+            .hero-buttons { flex-direction: column; width: 100%; max-width: 340px; margin: 0 auto; }
+            .btn-3d { width: 100%; text-align: center; padding: 16px 45px; font-size: 1rem; }
             
             .section-title { font-size: 2rem; margin-bottom: 40px; }
-            .zoom-card { padding-top: 35px; padding-bottom: 35px; padding-left: 30px; padding-right: 30px; }
+            .zoom-card { padding: 35px 30px; }
             .zoom-card h3 { font-size: 1.4rem; }
             .zoom-card p { font-size: 1rem; }
             
             .featured-card { padding: 35px; }
-            .wa-float { bottom: 25px; right: 25px; padding-top: 14px; padding-bottom: 14px; padding-left: 22px; padding-right: 22px; font-size: 1rem; }
+            .wa-float { bottom: 25px; right: 25px; padding: 14px 22px; font-size: 1rem; }
         }
     </style>
 </head>
@@ -645,7 +612,7 @@
             
             <div class="zoom-card featured-card">
                 <span class="featured-tag">Featured Authority Highlight</span>
-                <h3 style="font-size: 2.2rem; margin-top:15px; margin-bottom:10px;">Global Game Jam 2025</h3>
+                <h3 style="font-size: 2.2rem; margin: 15px 0 10px;">Global Game Jam 2025</h3>
                 <h4 style="font-size: 1.3rem; margin-bottom:20px;">Creative Lead & Brand Architect | IGDA @ CUST</h4>
                 <p style="font-size: 1.15rem; color:var(--text-silver);">
                     Spearheaded the official creative direction and digital branding strategy for the largest global game development event at Capital University. I engineered the entire visual narrative to maximize participant engagement and global reach, bridging the gap between tech-communities and aesthetic marketing.
@@ -736,7 +703,7 @@
         <h2 style="color: #fff; margin-bottom: 20px; font-size: 2.6rem; letter-spacing: -1px;">
             Ready to Scale Your Revenue?
         </h2>
-        <p style="color: var(--text-highlight); margin-bottom: 45px; font-size: 1.15rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+        <p style="color: var(--text-highlight); font-size: 1.15rem; max-width: 650px; margin: 0 auto 45px;">
             Stop wasting budget on 'likes' and start optimizing for 'sales'. Let's discuss how we can engineer an automated inbound ecosystem for your brand today.
         </p>
         <a href="https://www.instagram.com/ad_bis_marketinghub1/" target="_blank" class="btn-3d">Initiate Strategic Audit ↗</a>
